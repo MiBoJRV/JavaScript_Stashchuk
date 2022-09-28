@@ -1,20 +1,5 @@
-const personOne = {
-    name: 'Bob',
-    age: 21,
-    location: {
-        city: 'York'
-    }
+function printMyName() {
+    console.log('Mika');
 }
-
-function increasePersonAge(person) {
-    const updatePerson = Object.assign({}, person);
-    updatePerson.age +=1;
-    updatePerson.location.city = 'New';
-    return updatePerson;
-}
-
-const updatePersonOne = increasePersonAge(personOne);
-console.log(personOne.age);
-console.log(updatePersonOne.age);
-console.log(personOne.location.city);
-console.log(updatePersonOne.location.city);
+console.log('Start');
+setTimeout(printMyName, 1000)
